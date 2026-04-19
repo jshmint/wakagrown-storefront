@@ -14,37 +14,37 @@ const $$ = (sel, ctx) => [...(ctx || document).querySelectorAll(sel)];
 // prices: { '7g': X, '14g': Y, '28g': Z }
 const STRAINS = [
   // GAS
-  { id: 1,  name: 'Red Katanaz',       cat: 'gas',    thc: '29–33%', prices: { '7g': 195, '14g': 360, '28g': 660 }, terps: ['Caryophyllene','Myrcene','Limonene'],     desc: 'A signature gas cultivar delivering fuel-forward aromatics with a sharp, chassis-rattling exhale. Dense nugs, gassy nose, zero fluff.' },
-  { id: 2,  name: 'White Truffle Gas', cat: 'gas',    thc: '26–30%', prices: { '7g': 190, '14g': 350, '28g': 640 }, terps: ['Myrcene','Caryophyllene','Linalool'],     desc: 'Earth, musk, and petrol collide in one of the most complex gas profiles in the catalog. Heavy and grounding — the room knows.' },
-  { id: 3,  name: 'Jet Fuel Gelato',   cat: 'gas',    thc: '27–31%', prices: { '7g': 185, '14g': 340, '28g': 620 }, terps: ['Limonene','Caryophyllene','Terpinolene'], desc: 'Sharp jet-fuel bite smoothed out by a creamy Gelato finish. Loud on the break, long on the exhale. A crowd favorite for good reason.' },
-  { id: 4,  name: 'Garlic Cookies',    cat: 'gas',    thc: '25–29%', prices: { '7g': 185, '14g': 340, '28g': 620 }, terps: ['Myrcene','Caryophyllene','Ocimene'],      desc: 'Savory garlic funk with a biscotti back note. One of the most polarizing and respected aromas in the catalog — not for the faint of nose.' },
-  { id: 5,  name: 'Stardawg',          cat: 'gas',    thc: '24–28%', prices: { '7g': 180, '14g': 325, '28g': 600 }, terps: ['Caryophyllene','Myrcene','Pinene'],       desc: 'Old-school Chemdawg lineage brought forward with clean cultivation. Classic diesel star pattern, crystalline coverage, timeless.' },
-  { id: 6,  name: 'Sour Diesel OG',    cat: 'gas',    thc: '25–29%', prices: { '7g': 180, '14g': 325, '28g': 600 }, terps: ['Limonene','Myrcene','Caryophyllene'],    desc: 'East Coast fuel meets West Coast OG structure. Cerebral and sharp. One of the most copied and least-matched profiles going.' },
-  { id: 7,  name: 'Biscotti Gas',      cat: 'gas',    thc: '26–30%', prices: { '7g': 185, '14g': 340, '28g': 620 }, terps: ['Caryophyllene','Limonene','Linalool'],   desc: 'Baked cookie dough laced with a gassy exhale. The cross delivers depth that neither parent achieves on their own.' },
-  { id: 8,  name: 'Zkittlez Gas',      cat: 'gas',    thc: '23–27%', prices: { '7g': 180, '14g': 325, '28g': 600 }, terps: ['Myrcene','Limonene','Caryophyllene'],    desc: 'Gas lineage crossed with Zkittlez sweetness to create a hybrid profile that hits fruity on the nose and fuel on the back.' },
+  { id: 1,  name: 'Presidential Squirts 75',     cat: 'gas',    thc: '29–33%', prices: { '7g': 195, '14g': 360, '28g': 660 }, terps: ['Caryophyllene','Myrcene','Limonene'],     desc: 'A signature gas cultivar delivering fuel-forward aromatics with a sharp, chassis-rattling exhale. Dense nugs, gassy nose, zero fluff.',                                                                              photos: ['assets/img/strain-1.png', 'assets/img/presidentialsquirts75flower.MP4'] },
+  { id: 2,  name: 'White Truffle Gas',            cat: 'gas',    thc: '26–30%', prices: { '7g': 190, '14g': 350, '28g': 640 }, terps: ['Myrcene','Caryophyllene','Linalool'],     desc: 'Earth, musk, and petrol collide in one of the most complex gas profiles in the catalog. Heavy and grounding — the room knows.',                                                                                      photos: [] },
+  { id: 3,  name: 'Jet Fuel Gelato',              cat: 'gas',    thc: '27–31%', prices: { '7g': 185, '14g': 340, '28g': 620 }, terps: ['Limonene','Caryophyllene','Terpinolene'], desc: 'Sharp jet-fuel bite smoothed out by a creamy Gelato finish. Loud on the break, long on the exhale. A crowd favorite for good reason.',                                                                                photos: [] },
+  { id: 4,  name: 'Garlic Cookies',               cat: 'gas',    thc: '25–29%', prices: { '7g': 185, '14g': 340, '28g': 620 }, terps: ['Myrcene','Caryophyllene','Ocimene'],      desc: 'Savory garlic funk with a biscotti back note. One of the most polarizing and respected aromas in the catalog — not for the faint of nose.',                                                                          photos: [] },
+  { id: 5,  name: 'Stardawg',                     cat: 'gas',    thc: '24–28%', prices: { '7g': 180, '14g': 325, '28g': 600 }, terps: ['Caryophyllene','Myrcene','Pinene'],       desc: 'Old-school Chemdawg lineage brought forward with clean cultivation. Classic diesel star pattern, crystalline coverage, timeless.',                                                                                    photos: [] },
+  { id: 6,  name: 'Sour Diesel OG',               cat: 'gas',    thc: '25–29%', prices: { '7g': 180, '14g': 325, '28g': 600 }, terps: ['Limonene','Myrcene','Caryophyllene'],    desc: 'East Coast fuel meets West Coast OG structure. Cerebral and sharp. One of the most copied and least-matched profiles going.',                                                                                        photos: [] },
+  { id: 7,  name: 'Biscotti Gas',                 cat: 'gas',    thc: '26–30%', prices: { '7g': 185, '14g': 340, '28g': 620 }, terps: ['Caryophyllene','Limonene','Linalool'],   desc: 'Baked cookie dough laced with a gassy exhale. The cross delivers depth that neither parent achieves on their own.',                                                                                                   photos: [] },
+  { id: 8,  name: 'Zkittlez Gas',                 cat: 'gas',    thc: '23–27%', prices: { '7g': 180, '14g': 325, '28g': 600 }, terps: ['Myrcene','Limonene','Caryophyllene'],    desc: 'Gas lineage crossed with Zkittlez sweetness to create a hybrid profile that hits fruity on the nose and fuel on the back.',                                                                                          photos: [] },
   // CANDY
-  { id: 9,  name: 'Banana Jealousy',   cat: 'candy',  thc: '28–32%', prices: { '7g': 190, '14g': 350, '28g': 640 }, terps: ['Myrcene','Limonene','Linalool'],         desc: 'Banana Cream meets Jealousy for one of the most dessert-forward profiles in the run. Cream, banana, and sweet funk — incredibly smooth.' },
-  { id: 10, name: 'Runtz',             cat: 'candy',  thc: '24–28%', prices: { '7g': 185, '14g': 340, '28g': 620 }, terps: ['Limonene','Caryophyllene','Linalool'],   desc: 'Grape candy meets tropical fruit in the strain that defined a generation. Our pheno runs tight, dense, and true to its lineage.' },
-  { id: 11, name: 'Candy Rain',        cat: 'candy',  thc: '25–29%', prices: { '7g': 185, '14g': 340, '28g': 620 }, terps: ['Linalool','Limonene','Myrcene'],         desc: 'London Poundcake x Grape Gasoline. Sweet rain on a warm night — tropical fruit, floral undertone, sugar-dusted finish.' },
-  { id: 12, name: 'Peach Ringz',       cat: 'candy',  thc: '23–27%', prices: { '7g': 175, '14g': 310, '28g': 575 }, terps: ['Myrcene','Limonene','Ocimene'],          desc: 'Exactly what it promises. Peachy candy aroma with a light, airy structure. Bright and clean, perfect for those who ride candy profiles.' },
-  { id: 13, name: 'Gushers',           cat: 'candy',  thc: '22–26%', prices: { '7g': 185, '14g': 340, '28g': 620 }, terps: ['Limonene','Myrcene','Caryophyllene'],    desc: 'Tropical Zkittlez x Gelato #41. Candy-coated gassy punch with a juicy, fruity core. One of the best crossover strains in recent memory.' },
-  { id: 14, name: 'Punch Breath',      cat: 'candy',  thc: '24–28%', prices: { '7g': 180, '14g': 325, '28g': 600 }, terps: ['Linalool','Myrcene','Caryophyllene'],    desc: 'Purple Punch x Mendo Breath. Grape punch sweetness with a heavy, doughy exhale. The calming candy pick in the catalog.' },
-  { id: 15, name: 'Cotton Candy Kush', cat: 'candy',  thc: '21–25%', prices: { '7g': 175, '14g': 310, '28g': 575 }, terps: ['Linalool','Limonene','Terpinolene'],     desc: 'Light, airy sweetness with a Kush backbone. Cotton candy aroma that makes it immediately approachable — deceptively potent.' },
+  { id: 9,  name: 'Banana Jealousy',              cat: 'candy',  thc: '28–32%', prices: { '7g': 190, '14g': 350, '28g': 640 }, terps: ['Myrcene','Limonene','Linalool'],         desc: 'Banana Cream meets Jealousy for one of the most dessert-forward profiles in the run. Cream, banana, and sweet funk — incredibly smooth.',                                                                            photos: [] },
+  { id: 10, name: 'Runtz',                        cat: 'candy',  thc: '24–28%', prices: { '7g': 185, '14g': 340, '28g': 620 }, terps: ['Limonene','Caryophyllene','Linalool'],   desc: 'Grape candy meets tropical fruit in the strain that defined a generation. Our pheno runs tight, dense, and true to its lineage.',                                                                                    photos: [] },
+  { id: 11, name: 'Candy Rain',                   cat: 'candy',  thc: '25–29%', prices: { '7g': 185, '14g': 340, '28g': 620 }, terps: ['Linalool','Limonene','Myrcene'],         desc: 'London Poundcake x Grape Gasoline. Sweet rain on a warm night — tropical fruit, floral undertone, sugar-dusted finish.',                                                                                             photos: [] },
+  { id: 12, name: 'Peach Ringz',                  cat: 'candy',  thc: '23–27%', prices: { '7g': 175, '14g': 310, '28g': 575 }, terps: ['Myrcene','Limonene','Ocimene'],          desc: 'Exactly what it promises. Peachy candy aroma with a light, airy structure. Bright and clean, perfect for those who ride candy profiles.',                                                                           photos: [] },
+  { id: 13, name: 'Gushers',                      cat: 'candy',  thc: '22–26%', prices: { '7g': 185, '14g': 340, '28g': 620 }, terps: ['Limonene','Myrcene','Caryophyllene'],    desc: 'Tropical Zkittlez x Gelato #41. Candy-coated gassy punch with a juicy, fruity core. One of the best crossover strains in recent memory.',                                                                          photos: [] },
+  { id: 14, name: 'Punch Breath',                 cat: 'candy',  thc: '24–28%', prices: { '7g': 180, '14g': 325, '28g': 600 }, terps: ['Linalool','Myrcene','Caryophyllene'],    desc: 'Purple Punch x Mendo Breath. Grape punch sweetness with a heavy, doughy exhale. The calming candy pick in the catalog.',                                                                                            photos: [] },
+  { id: 15, name: 'Cotton Candy Kush',            cat: 'candy',  thc: '21–25%', prices: { '7g': 175, '14g': 310, '28g': 575 }, terps: ['Linalool','Limonene','Terpinolene'],     desc: 'Light, airy sweetness with a Kush backbone. Cotton candy aroma that makes it immediately approachable — deceptively potent.',                                                                                        photos: [] },
   // OG
-  { id: 16, name: 'Venuz #4',          cat: 'og',     thc: '27–31%', prices: { '7g': 195, '14g': 360, '28g': 660 }, terps: ['Myrcene','Caryophyllene','Linalool'],    desc: 'Our most sought-after OG pheno. Lemon-pine nose with a classic earthen foundation. Dense, trichome-packed, and true to its lineage in every run.' },
-  { id: 17, name: 'OG Kush',           cat: 'og',     thc: '22–26%', prices: { '7g': 180, '14g': 325, '28g': 600 }, terps: ['Myrcene','Limonene','Caryophyllene'],    desc: 'The gold standard. Run properly, it is still one of the most complex and nuanced profiles in existence. Our cut does it justice.' },
-  { id: 18, name: 'Larry OG',          cat: 'og',     thc: '24–28%', prices: { '7g': 180, '14g': 325, '28g': 600 }, terps: ['Limonene','Myrcene','Pinene'],           desc: 'SFV OG x OG Kush. Lemon-citrus forward with a soft earthy close. One of the most balanced OG expressions available.' },
-  { id: 19, name: 'Ghost OG',          cat: 'og',     thc: '25–29%', prices: { '7g': 185, '14g': 340, '28g': 620 }, terps: ['Caryophyllene','Myrcene','Limonene'],    desc: "Legendary cut. Earth, citrus, and pine locked in an OG structure that still doesn't miss. A benchmark in any serious collection." },
-  { id: 20, name: 'Master OG',         cat: 'og',     thc: '24–28%', prices: { '7g': 185, '14g': 340, '28g': 620 }, terps: ['Myrcene','Linalool','Caryophyllene'],    desc: 'Hindu Kush x Empress OG. Heavy body, hashy spice, and a deep floral undertone. A quiet powerhouse that earns its name.' },
-  { id: 21, name: 'Bubba Kush',        cat: 'og',     thc: '20–24%', prices: { '7g': 175, '14g': 310, '28g': 575 }, terps: ['Myrcene','Linalool','Caryophyllene'],    desc: 'Classic American Kush with chocolate-coffee notes and a dense, greasy structure. The late-night pick in the OG roster.' },
-  { id: 22, name: 'King Louis XIII',   cat: 'og',     thc: '23–27%', prices: { '7g': 180, '14g': 325, '28g': 600 }, terps: ['Myrcene','Caryophyllene','Pinene'],      desc: 'Pine-heavy OG with a musty, earthy base. Strong and clear. A regal expression of what West Coast OG is supposed to be.' },
+  { id: 16, name: 'Venuz #4',                     cat: 'og',     thc: '27–31%', prices: { '7g': 195, '14g': 360, '28g': 660 }, terps: ['Myrcene','Caryophyllene','Linalool'],    desc: 'Our most sought-after OG pheno. Lemon-pine nose with a classic earthen foundation. Dense, trichome-packed, and true to its lineage in every run.',                                                                  photos: [] },
+  { id: 17, name: 'OG Kush',                      cat: 'og',     thc: '22–26%', prices: { '7g': 180, '14g': 325, '28g': 600 }, terps: ['Myrcene','Limonene','Caryophyllene'],    desc: 'The gold standard. Run properly, it is still one of the most complex and nuanced profiles in existence. Our cut does it justice.',                                                                                   photos: [] },
+  { id: 18, name: 'Larry OG',                     cat: 'og',     thc: '24–28%', prices: { '7g': 180, '14g': 325, '28g': 600 }, terps: ['Limonene','Myrcene','Pinene'],           desc: 'SFV OG x OG Kush. Lemon-citrus forward with a soft earthy close. One of the most balanced OG expressions available.',                                                                                               photos: [] },
+  { id: 19, name: 'Ghost OG',                     cat: 'og',     thc: '25–29%', prices: { '7g': 185, '14g': 340, '28g': 620 }, terps: ['Caryophyllene','Myrcene','Limonene'],    desc: "Legendary cut. Earth, citrus, and pine locked in an OG structure that still doesn't miss. A benchmark in any serious collection.",                                                                                  photos: [] },
+  { id: 20, name: 'Master OG',                    cat: 'og',     thc: '24–28%', prices: { '7g': 185, '14g': 340, '28g': 620 }, terps: ['Myrcene','Linalool','Caryophyllene'],    desc: 'Hindu Kush x Empress OG. Heavy body, hashy spice, and a deep floral undertone. A quiet powerhouse that earns its name.',                                                                                            photos: [] },
+  { id: 21, name: 'Bubba Kush',                   cat: 'og',     thc: '20–24%', prices: { '7g': 175, '14g': 310, '28g': 575 }, terps: ['Myrcene','Linalool','Caryophyllene'],    desc: 'Classic American Kush with chocolate-coffee notes and a dense, greasy structure. The late-night pick in the OG roster.',                                                                                             photos: [] },
+  { id: 22, name: 'King Louis XIII',              cat: 'og',     thc: '23–27%', prices: { '7g': 180, '14g': 325, '28g': 600 }, terps: ['Myrcene','Caryophyllene','Pinene'],      desc: 'Pine-heavy OG with a musty, earthy base. Strong and clear. A regal expression of what West Coast OG is supposed to be.',                                                                                             photos: [] },
   // EXOTIC
-  { id: 23, name: 'Mimosa',            cat: 'exotic', thc: '22–26%', prices: { '7g': 180, '14g': 325, '28g': 600 }, terps: ['Limonene','Myrcene','Ocimene'],          desc: 'Clementine x Purple Punch. Bright citrus champagne aroma with a light tropical body. Uplifting and elegant — a rare morning profile.' },
-  { id: 24, name: 'Cereal Milk',       cat: 'exotic', thc: '23–27%', prices: { '7g': 185, '14g': 340, '28g': 620 }, terps: ['Limonene','Myrcene','Linalool'],         desc: 'Y Life x Snowman. The milk left over from a bowl of fruity cereal — sweet, creamy, and indulgent. One of the more original profiles in the game.' },
-  { id: 25, name: 'Gelato 41',         cat: 'exotic', thc: '26–30%', prices: { '7g': 190, '14g': 350, '28g': 640 }, terps: ['Caryophyllene','Limonene','Linalool'],   desc: 'Thin Mint GSC x Sherbet. Rich dessert profile with sweet-spicy depth. Dense and colorful nugs with a creamy exhale that lingers.' },
-  { id: 26, name: 'Ice Cream Cake',    cat: 'exotic', thc: '24–28%', prices: { '7g': 190, '14g': 350, '28g': 640 }, terps: ['Linalool','Myrcene','Caryophyllene'],    desc: 'Wedding Cake x Gelato #33. Vanilla icing, sweet cream, and a sugary close. One of the most visually striking and aromatically rich exotics we run.' },
-  { id: 27, name: 'Purple Punch',      cat: 'exotic', thc: '20–24%', prices: { '7g': 175, '14g': 310, '28g': 575 }, terps: ['Myrcene','Linalool','Caryophyllene'],    desc: 'Larry OG x Granddaddy Purple. Blueberry muffins with grape punch notes. Smooth, colorful, and endlessly pleasing in both profile and appearance.' },
-  { id: 28, name: 'Wedding Cake',      cat: 'exotic', thc: '25–29%', prices: { '7g': 190, '14g': 350, '28g': 640 }, terps: ['Caryophyllene','Limonene','Myrcene'],    desc: 'Triangle Kush x Animal Mints. Vanilla and tangy pepper in a dense, sticky package. The exotic that bridges gas lovers and candy enthusiasts.' },
+  { id: 23, name: 'Mimosa',                       cat: 'exotic', thc: '22–26%', prices: { '7g': 180, '14g': 325, '28g': 600 }, terps: ['Limonene','Myrcene','Ocimene'],          desc: 'Clementine x Purple Punch. Bright citrus champagne aroma with a light tropical body. Uplifting and elegant — a rare morning profile.',                                                                               photos: [] },
+  { id: 24, name: 'Cereal Milk',                  cat: 'exotic', thc: '23–27%', prices: { '7g': 185, '14g': 340, '28g': 620 }, terps: ['Limonene','Myrcene','Linalool'],         desc: 'Y Life x Snowman. The milk left over from a bowl of fruity cereal — sweet, creamy, and indulgent. One of the more original profiles in the game.',                                                                  photos: [] },
+  { id: 25, name: 'Gelato 41',                    cat: 'exotic', thc: '26–30%', prices: { '7g': 190, '14g': 350, '28g': 640 }, terps: ['Caryophyllene','Limonene','Linalool'],   desc: 'Thin Mint GSC x Sherbet. Rich dessert profile with sweet-spicy depth. Dense and colorful nugs with a creamy exhale that lingers.',                                                                                   photos: [] },
+  { id: 26, name: 'Ice Cream Cake',               cat: 'exotic', thc: '24–28%', prices: { '7g': 190, '14g': 350, '28g': 640 }, terps: ['Linalool','Myrcene','Caryophyllene'],    desc: 'Wedding Cake x Gelato #33. Vanilla icing, sweet cream, and a sugary close. One of the most visually striking and aromatically rich exotics we run.',                                                                photos: [] },
+  { id: 27, name: 'Purple Punch',                 cat: 'exotic', thc: '20–24%', prices: { '7g': 175, '14g': 310, '28g': 575 }, terps: ['Myrcene','Linalool','Caryophyllene'],    desc: 'Larry OG x Granddaddy Purple. Blueberry muffins with grape punch notes. Smooth, colorful, and endlessly pleasing in both profile and appearance.',                                                                  photos: [] },
+  { id: 28, name: 'Wedding Cake',                 cat: 'exotic', thc: '25–29%', prices: { '7g': 190, '14g': 350, '28g': 640 }, terps: ['Caryophyllene','Limonene','Myrcene'],    desc: 'Triangle Kush x Animal Mints. Vanilla and tangy pepper in a dense, sticky package. The exotic that bridges gas lovers and candy enthusiasts.',                                                                       photos: [] },
 ];
 
 // Category-specific gradient palettes — each cat has its own visual identity
@@ -139,260 +139,6 @@ function initAgeGate() {
   });
 }
 
-/* ════════════════════════════════════════════════════════════
-   2. CART STATE
-═══════════════════════════════════════════════════════════ */
-const CART_KEY = 'waka_cart_v2';
-let cart = [];
-
-function cartLoad() {
-  try { cart = JSON.parse(localStorage.getItem(CART_KEY)) || []; } catch (_) { cart = []; }
-}
-function cartSave() {
-  try { localStorage.setItem(CART_KEY, JSON.stringify(cart)); } catch (_) {}
-}
-function cartCount() { return cart.reduce((s, i) => s + i.qty, 0); }
-function cartSubtotal() { return cart.reduce((s, i) => s + i.price * i.qty, 0); }
-
-function cartAdd(strain, weight) {
-  const key   = `${strain.id}_${weight}`;
-  const price = strain.prices[weight];
-  const existing = cart.find(i => i.key === key);
-  if (existing) {
-    existing.qty++;
-  } else {
-    cart.push({ key, id: strain.id, name: strain.name, cat: strain.cat, price, weight, thc: strain.thc, qty: 1 });
-  }
-  cartSave();
-  cartSyncUI();
-  openCartDrawer();
-}
-
-function cartRemove(key) {
-  cart = cart.filter(i => i.key !== key);
-  cartSave();
-  cartSyncUI();
-}
-
-function cartSetQty(key, delta) {
-  const item = cart.find(i => i.key === key);
-  if (!item) return;
-  item.qty = Math.max(1, item.qty + delta);
-  cartSave();
-  cartSyncUI();
-}
-
-function cartClear() {
-  cart = [];
-  cartSave();
-  cartSyncUI();
-}
-
-function cartSyncUI() {
-  // Badge
-  const badge = $('#cartBadge');
-  const count = cartCount();
-  if (badge) {
-    badge.textContent = count;
-    badge.hidden = count === 0;
-  }
-  cartRenderDrawer();
-}
-
-function cartRenderDrawer() {
-  const itemsEl = $('#cartItems');
-  const footEl  = $('#cartFoot');
-  const totalEl = $('#cartTotal');
-  const countEl = $('#cartCount');
-  if (!itemsEl) return;
-
-  const count = cartCount();
-  if (countEl) countEl.textContent = `${count} item${count !== 1 ? 's' : ''}`;
-
-  if (cart.length === 0) {
-    itemsEl.innerHTML = `
-      <div class="cart-empty">
-        <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true">
-          <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
-          <line x1="3" y1="6" x2="21" y2="6"/>
-          <path d="M16 10a4 4 0 01-8 0"/>
-        </svg>
-        <p>Your cart is empty</p>
-        <span>Add strains from the catalog</span>
-      </div>`;
-    if (footEl) footEl.style.display = 'none';
-    return;
-  }
-
-  if (footEl) footEl.style.display = '';
-  if (totalEl) totalEl.textContent = `$${cartSubtotal().toFixed(2)}`;
-
-  itemsEl.innerHTML = cart.map(item => `
-    <div class="cart-item" data-key="${item.key}">
-      <div class="cart-item__info">
-        <strong class="cart-item__name">${item.name}</strong>
-        <span class="cart-item__meta">${item.cat} · ${item.weight} · THC ${item.thc}</span>
-        <span class="cart-item__unit-price">$${item.price}/${item.weight}</span>
-      </div>
-      <div class="cart-item__right">
-        <div class="cart-item__qty">
-          <button class="qty-btn" data-action="dec" data-key="${item.key}" aria-label="Decrease quantity">−</button>
-          <span>${item.qty}</span>
-          <button class="qty-btn" data-action="inc" data-key="${item.key}" aria-label="Increase quantity">+</button>
-        </div>
-        <span class="cart-item__line-price">$${(item.price * item.qty).toFixed(2)}</span>
-        <button class="cart-item__remove" data-key="${item.key}" aria-label="Remove ${item.name}">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-            <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
-          </svg>
-        </button>
-      </div>
-    </div>`).join('');
-
-  // Event delegation for qty and remove buttons
-  itemsEl.querySelectorAll('.qty-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      cartSetQty(btn.dataset.key, btn.dataset.action === 'inc' ? 1 : -1);
-    });
-  });
-  itemsEl.querySelectorAll('.cart-item__remove').forEach(btn => {
-    btn.addEventListener('click', () => cartRemove(btn.dataset.key));
-  });
-}
-
-function openCartDrawer() {
-  const drawer  = $('#cartDrawer');
-  const overlay = $('#cartOverlay');
-  if (!drawer) return;
-  drawer.hidden = false;
-  requestAnimationFrame(() => {
-    drawer.classList.add('open');
-    overlay.classList.add('open');
-  });
-  document.body.style.overflow = 'hidden';
-}
-
-function closeCartDrawer() {
-  const drawer  = $('#cartDrawer');
-  const overlay = $('#cartOverlay');
-  if (!drawer) return;
-  drawer.classList.remove('open');
-  overlay.classList.remove('open');
-  drawer.addEventListener('transitionend', () => {
-    if (!drawer.classList.contains('open')) drawer.hidden = true;
-  }, { once: true });
-  document.body.style.overflow = '';
-}
-
-function initCart() {
-  cartLoad();
-  cartSyncUI();
-
-  const cartBtn  = $('#cartBtn');
-  const cartClose = $('#cartClose');
-  const overlay  = $('#cartOverlay');
-  const clearBtn = $('#cartClear');
-  const checkout = $('#cartCheckout');
-
-  if (cartBtn)   cartBtn.addEventListener('click', openCartDrawer);
-  if (cartClose) cartClose.addEventListener('click', closeCartDrawer);
-  if (overlay)   overlay.addEventListener('click', closeCartDrawer);
-  if (clearBtn)  clearBtn.addEventListener('click', () => {
-    if (confirm('Clear your entire cart?')) cartClear();
-  });
-  if (checkout)  checkout.addEventListener('click', openOrderModal);
-
-  document.addEventListener('keydown', e => {
-    const drawer = $('#cartDrawer');
-    if (e.key === 'Escape' && drawer && drawer.classList.contains('open')) closeCartDrawer();
-  });
-}
-
-/* ════════════════════════════════════════════════════════════
-   3. ORDER MODAL
-═══════════════════════════════════════════════════════════ */
-function openOrderModal() {
-  if (cart.length === 0) return;
-  closeCartDrawer();
-
-  const modal    = $('#orderModal');
-  const bd       = $('#orderModalBd');
-  const closeBtn = $('#orderModalClose');
-  const summary  = $('#orderSummary');
-  if (!modal) return;
-
-  // Render order summary
-  summary.innerHTML = `
-    <div class="order-summary">
-      ${cart.map(i => `
-        <div class="order-summary__row">
-          <span>${i.name} <em>${i.weight} ×${i.qty}</em></span>
-          <span>$${(i.price * i.qty).toFixed(2)}</span>
-        </div>`).join('')}
-      <div class="order-summary__total">
-        <span>Total</span>
-        <strong>$${cartSubtotal().toFixed(2)}</strong>
-      </div>
-    </div>`;
-
-  modal.style.display = 'flex';
-  document.body.style.overflow = 'hidden';
-
-  const close = () => {
-    modal.style.display = 'none';
-    document.body.style.overflow = '';
-  };
-
-  bd.addEventListener('click', close, { once: true });
-  closeBtn.addEventListener('click', close, { once: true });
-
-  // Re-create form node to clear stale listeners
-  const oldForm  = $('#orderForm');
-  const newForm  = oldForm.cloneNode(true);
-  oldForm.parentNode.replaceChild(newForm, oldForm);
-
-  newForm.addEventListener('submit', e => {
-    e.preventDefault();
-    let valid = true;
-
-    const nameEl  = newForm.querySelector('#ofName');
-    const emailEl = newForm.querySelector('#ofEmail');
-    const notesEl = newForm.querySelector('#ofNotes');
-    const status  = newForm.querySelector('#orderStatus');
-
-    [nameEl, emailEl].forEach(el => {
-      el.classList.remove('invalid');
-      el.nextElementSibling.textContent = '';
-    });
-
-    if (!nameEl.value.trim()) {
-      nameEl.classList.add('invalid');
-      nameEl.nextElementSibling.textContent = 'Name is required.';
-      valid = false;
-    }
-    const emailVal = emailEl.value.trim();
-    if (!emailVal || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailVal)) {
-      emailEl.classList.add('invalid');
-      emailEl.nextElementSibling.textContent = 'Valid email required.';
-      valid = false;
-    }
-    if (!valid) return;
-
-    const orderLines = cart.map(i =>
-      `• ${i.name} (${i.cat}) ${i.weight} ×${i.qty} @ $${i.price}/${i.weight} — $${(i.price * i.qty).toFixed(2)}`
-    ).join('\n');
-    const notes   = notesEl.value.trim();
-    const subject = encodeURIComponent(`WakaGrown Order — ${nameEl.value.trim()}`);
-    const body    = encodeURIComponent(
-      `Order from: ${nameEl.value.trim()}\nEmail: ${emailVal}\n\nORDER DETAILS:\n${orderLines}\n\nSubtotal: $${cartSubtotal().toFixed(2)}${notes ? '\n\nNotes: ' + notes : ''}`
-    );
-
-    window.location.href = `mailto:info@wakagrown.com?subject=${subject}&body=${body}`;
-    status.textContent = 'Opening your mail client…';
-    cartClear();
-    close();
-  });
-}
 
 /* ════════════════════════════════════════════════════════════
    4. NAV — sticky shadow + hamburger
@@ -478,7 +224,7 @@ function initCarousel() {
         <p class="c-card-thc">THC <strong>${s.thc}</strong></p>
         <div class="c-card-footer">
           <span class="c-card-price">from $${s.prices['7g']}</span>
-          <button class="atc-btn" aria-label="Select ${s.name}">Select</button>
+          <button class="atc-btn" aria-label="View ${s.name}">Details</button>
         </div>
       </div>`;
     card.addEventListener('click', () => openStrainModal(s));
@@ -578,9 +324,11 @@ function initStrainsGrid() {
       card.className = 'strain-card';
       card.style.animationDelay = `${i * 0.03}s`;
       card.innerHTML = `
-        <div class="strain-img" style="background:${catGrad(s.cat, s.id)}">
-          <div class="strain-img__glow" style="background:radial-gradient(circle at 40% 60%,${CAT_GLOW[s.cat]},transparent 60%)"></div>
-          <span style="color:${CAT_LETTER[s.cat]};position:relative;z-index:1">${s.name[0]}</span>
+        <div class="strain-img" style="background:${s.photos && s.photos.length ? '#0d1020' : catGrad(s.cat, s.id)}">
+          ${s.photos && s.photos.length
+            ? `<img src="${s.photos[0]}" alt="${s.name}" style="width:100%;height:100%;object-fit:contain;display:block;">`
+            : `<div class="strain-img__glow" style="background:radial-gradient(circle at 40% 60%,${CAT_GLOW[s.cat]},transparent 60%)"></div>
+          <span style="color:${CAT_LETTER[s.cat]};position:relative;z-index:1">${s.name[0]}</span>`}
         </div>
         <div class="strain-body">
           <p class="strain-cat">${s.cat}</p>
@@ -588,7 +336,7 @@ function initStrainsGrid() {
           <p class="strain-thc">THC <strong>${s.thc}</strong></p>
           <div class="strain-footer">
             <span class="strain-price">from $${s.prices['7g']}</span>
-            <button class="atc-btn atc-btn--sm" aria-label="Select ${s.name}">Select</button>
+            <button class="atc-btn atc-btn--sm" aria-label="View ${s.name}">Details</button>
           </div>
         </div>`;
       card.addEventListener('click', () => openStrainModal(s));
@@ -616,7 +364,45 @@ function initStrainsGrid() {
 }
 
 /* ════════════════════════════════════════════════════════════
-   7. STRAIN MODAL
+   7. MEDIA FULLSCREEN (mobile expand)
+═══════════════════════════════════════════════════════════ */
+function openMediaFullscreen(src) {
+  const lb      = $('#lightbox');
+  const lbBd    = $('#lbBd');
+  const lbClose = $('#lbClose');
+  const lbPrev  = $('#lbPrev');
+  const lbNext  = $('#lbNext');
+  const lbImg   = $('#lbImg');
+  const lbCount = $('#lbCount');
+
+  const isVideo = /\.(mp4|webm|mov|ogg)$/i.test(src);
+  lbImg.innerHTML = isVideo
+    ? `<video src="${src}" autoplay muted loop playsinline class="lb-media-video"></video>`
+    : `<img src="${src}" alt="Media" class="lb-media-img">`;
+  lbCount.textContent = '';
+  lbPrev.style.display = 'none';
+  lbNext.style.display = 'none';
+
+  lb.style.display = 'flex';
+  document.body.style.overflow = 'hidden';
+
+  const close = () => {
+    lb.style.display = 'none';
+    document.body.style.overflow = '';
+    lbPrev.style.display = '';
+    lbNext.style.display = '';
+    lbBd.removeEventListener('click', close);
+    lbClose.removeEventListener('click', close);
+    document.removeEventListener('keydown', onKey);
+  };
+  const onKey = e => { if (e.key === 'Escape') close(); };
+  lbBd.addEventListener('click', close);
+  lbClose.addEventListener('click', close);
+  document.addEventListener('keydown', onKey);
+}
+
+/* ════════════════════════════════════════════════════════════
+   8. STRAIN MODAL
 ═══════════════════════════════════════════════════════════ */
 function openStrainModal(s) {
   const modal    = $('#strainModal');
@@ -629,12 +415,57 @@ function openStrainModal(s) {
   const terpsEl  = $('#modalTerps');
   const thcEl    = $('#modalThc');
   const priceEl  = $('#modalPrice');
-  const atcBtn   = $('#modalAtcBtn');
 
-  imgEl.style.background = catGrad(s.cat, s.id);
-  imgEl.innerHTML = `
-    <div style="position:absolute;inset:0;background:radial-gradient(circle at 40% 60%,${CAT_GLOW[s.cat]},transparent 60%)"></div>
-    <span style="font-family:var(--display);font-size:6rem;font-weight:900;color:${CAT_LETTER[s.cat]};position:relative;z-index:1">${s.name[0]}</span>`;
+  // Build media carousel or placeholder
+  const photos = s.photos && s.photos.length ? s.photos : [];
+  if (photos.length) {
+    imgEl.style.background = '#0d1020';
+    let carIdx = 0;
+    function renderCarousel() {
+      const src = photos[carIdx];
+      const isVideo = /\.(mp4|webm|mov|ogg)$/i.test(src);
+      const mediaHTML = isVideo
+        ? `<video src="${src}" class="carousel-media" autoplay muted loop playsinline></video>`
+        : `<img src="${src}" alt="${s.name}" class="carousel-media">`;
+      const dotsHTML = photos.length > 1
+        ? `<div class="carousel-dots">${photos.map((_, i) => `<span class="carousel-dot${i === carIdx ? ' active' : ''}"></span>`).join('')}</div>`
+        : '';
+      const arrowsHTML = photos.length > 1
+        ? `<button class="carousel-arrow carousel-prev" aria-label="Previous">&#8249;</button>
+           <button class="carousel-arrow carousel-next" aria-label="Next">&#8250;</button>`
+        : '';
+      const expandHTML = `<button class="media-expand-btn" aria-label="View fullscreen">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/>
+          <line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/>
+        </svg>
+      </button>`;
+      imgEl.innerHTML = mediaHTML + arrowsHTML + dotsHTML + expandHTML;
+      // Arrow listeners
+      const prev = imgEl.querySelector('.carousel-prev');
+      const next = imgEl.querySelector('.carousel-next');
+      if (prev) prev.addEventListener('click', e => { e.stopPropagation(); carIdx = (carIdx - 1 + photos.length) % photos.length; renderCarousel(); });
+      if (next) next.addEventListener('click', e => { e.stopPropagation(); carIdx = (carIdx + 1) % photos.length; renderCarousel(); });
+      // Expand button — mobile fullscreen
+      const expandBtn = imgEl.querySelector('.media-expand-btn');
+      if (expandBtn) expandBtn.addEventListener('click', e => { e.stopPropagation(); openMediaFullscreen(photos[carIdx]); });
+      // Touch swipe
+      let touchX = null;
+      imgEl.addEventListener('touchstart', e => { touchX = e.touches[0].clientX; }, { passive: true });
+      imgEl.addEventListener('touchend', e => {
+        if (touchX === null) return;
+        const diff = touchX - e.changedTouches[0].clientX;
+        if (Math.abs(diff) > 40) { carIdx = diff > 0 ? (carIdx + 1) % photos.length : (carIdx - 1 + photos.length) % photos.length; renderCarousel(); }
+        touchX = null;
+      });
+    }
+    renderCarousel();
+  } else {
+    imgEl.style.background = catGrad(s.cat, s.id);
+    imgEl.innerHTML = `
+      <div style="position:absolute;inset:0;background:radial-gradient(circle at 40% 60%,${CAT_GLOW[s.cat]},transparent 60%)"></div>
+      <span style="font-family:var(--display);font-size:6rem;font-weight:900;color:${CAT_LETTER[s.cat]};position:relative;z-index:1">${s.name[0]}</span>`;
+  }
   nameEl.textContent = s.name;
   pillEl.textContent = s.cat;
   descEl.textContent = s.desc;
@@ -659,12 +490,16 @@ function openStrainModal(s) {
   if (priceLabel) priceLabel.textContent = weightLabels['7g'];
   if (priceEl) priceEl.textContent = `$${s.prices['7g']}`;
 
-  // Wire up Add to Cart in modal
-  if (atcBtn) {
-    const newBtn = atcBtn.cloneNode(true);
-    atcBtn.parentNode.replaceChild(newBtn, atcBtn);
+  // Wire up Contact to Order button — opens Telegram with strain info pre-filled
+  const orderBtn = $('#modalOrderBtn');
+  if (orderBtn) {
+    const newBtn = orderBtn.cloneNode(true);
+    orderBtn.parentNode.replaceChild(newBtn, orderBtn);
     newBtn.addEventListener('click', () => {
-      cartAdd(s, selectedWeight);
+      const weight = selectedWeight;
+      const price  = s.prices[weight];
+      const msg    = `Hi! I want to order:\n*${s.name}* — ${weight} @ $${price}\nTHC: ${s.thc}`;
+      window.open(`https://t.me/wakagrown420?text=${encodeURIComponent(msg)}`, '_blank', 'noopener');
       close();
     });
   }
@@ -691,28 +526,31 @@ function openStrainModal(s) {
 ═══════════════════════════════════════════════════════════ */
 function initGallery() {
   const grid = $('#galleryGrid');
-  const seeds = [
-    { seed: 'waka1', h: 260 }, { seed: 'waka2', h: 320 },
-    { seed: 'waka3', h: 280 }, { seed: 'waka4', h: 360 },
-    { seed: 'waka5', h: 240 }, { seed: 'waka6', h: 300 },
-    { seed: 'waka7', h: 380 }, { seed: 'waka8', h: 260 },
-    { seed: 'waka9', h: 290 }, { seed: 'waka10', h: 340 },
-    { seed: 'waka11', h: 250 }, { seed: 'waka12', h: 310 },
+  // Heights and color variants for each placeholder tile.
+  // Replace an entry's `src` with an actual image path once photos are ready.
+  const items = [
+    { h: 260, variant: ''    }, { h: 320, variant: '--b' },
+    { h: 280, variant: '--c' }, { h: 360, variant: ''    },
+    { h: 240, variant: '--b' }, { h: 300, variant: '--c' },
+    { h: 380, variant: ''    }, { h: 260, variant: '--b' },
+    { h: 290, variant: '--c' }, { h: 340, variant: ''    },
+    { h: 250, variant: '--b' }, { h: 310, variant: '--c' },
   ];
 
-  seeds.forEach((item, i) => {
-    const w   = 600;
-    const url = `https://picsum.photos/seed/${item.seed}/${w}/${item.h}`;
+  items.forEach((item, i) => {
     const div = document.createElement('div');
     div.className = 'gal-item';
     div.innerHTML = `
-      <img src="${url}" alt="WakaGrown gallery ${i + 1}" loading="lazy" width="${w}" height="${item.h}" />
+      <div class="gal-ph gal-ph${item.variant}" style="height:${item.h}px" aria-label="WakaGrown gallery photo ${i + 1}">
+        <span class="gal-ph__mark">W</span>
+        <span class="gal-ph__label">Photo Coming Soon</span>
+      </div>
       <div class="gal-overlay">
         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
       </div>`;
     div.setAttribute('tabindex', '0');
-    div.addEventListener('click', () => openLightbox(seeds, i));
-    div.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openLightbox(seeds, i); } });
+    div.addEventListener('click', () => openLightbox(items, i));
+    div.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openLightbox(items, i); } });
     grid.appendChild(div);
   });
 }
@@ -728,9 +566,17 @@ function openLightbox(seeds, startIdx) {
   let current = startIdx;
 
   function show(idx) {
-    const { seed, h } = seeds[idx];
-    const url = `https://picsum.photos/seed/${seed}/1000/${h * 2}`;
-    lbImg.innerHTML = `<img src="${url}" alt="Gallery image ${idx + 1}" />`;
+    const item = seeds[idx];
+    // If the item has a real src, show it; otherwise render the branded placeholder.
+    if (item.src) {
+      lbImg.innerHTML = `<img src="${item.src}" alt="WakaGrown gallery ${idx + 1}" />`;
+    } else {
+      lbImg.innerHTML = `
+        <div class="gal-ph gal-ph${item.variant}" style="height:clamp(260px,55vh,560px);width:clamp(300px,70vw,700px)">
+          <span class="gal-ph__mark">W</span>
+          <span class="gal-ph__label">Photo Coming Soon</span>
+        </div>`;
+    }
     lbCount.textContent = `${idx + 1} / ${seeds.length}`;
     lbPrev.disabled = idx === 0;
     lbNext.disabled = idx === seeds.length - 1;
@@ -793,50 +639,6 @@ function initAccordion() {
   });
 }
 
-/* ════════════════════════════════════════════════════════════
-   10. CONTACT
-═══════════════════════════════════════════════════════════ */
-function initContact() {
-  const form   = $('#contactForm');
-  const status = $('#formStatus');
-  if (!form) return;
-
-  form.addEventListener('submit', e => {
-    e.preventDefault();
-    let valid = true;
-    const fields = [
-      { id: 'cfName',  label: 'Name',    type: 'text' },
-      { id: 'cfEmail', label: 'Email',   type: 'email' },
-      { id: 'cfMsg',   label: 'Message', type: 'text' },
-    ];
-    const values = {};
-    fields.forEach(f => {
-      const el  = $('#' + f.id);
-      const err = el.nextElementSibling;
-      el.classList.remove('invalid');
-      err.textContent = '';
-      const v = el.value.trim();
-      if (!v) {
-        el.classList.add('invalid');
-        err.textContent = `${f.label} is required.`;
-        valid = false;
-      } else if (f.type === 'email' && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)) {
-        el.classList.add('invalid');
-        err.textContent = 'Enter a valid email address.';
-        valid = false;
-      } else {
-        values[f.id] = v;
-      }
-    });
-    if (!valid) return;
-    const subject = encodeURIComponent(`WakaGrown Inquiry from ${values['cfName']}`);
-    const body    = encodeURIComponent(`Name: ${values['cfName']}\nEmail: ${values['cfEmail']}\n\n${values['cfMsg']}`);
-    window.location.href = `mailto:info@wakagrown.com?subject=${subject}&body=${body}`;
-    status.textContent = 'Opening your mail client…';
-    form.reset();
-    setTimeout(() => { status.textContent = ''; }, 5000);
-  });
-}
 
 /* ════════════════════════════════════════════════════════════
    11. SCROLL REVEAL
@@ -971,13 +773,11 @@ function initSeedsGrid() {
 
 function initSite() {
   initNav();
-  initCart();
   initCarousel();
   initStrainsGrid();
   initSeedsGrid();
   initGallery();
   initAccordion();
-  initContact();
   initScrollReveal();
   initBackToTop();
 }

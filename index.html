@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css?v=3" />
 </head>
 <body>
 
@@ -54,15 +54,7 @@
         <a href="#story"    class="nav-link">Story</a>
         <a href="#faq"      class="nav-link">FAQ</a>
         <a href="#contact"  class="nav-link">Contact</a>
-        <button id="cartBtn" class="nav-cart-btn" aria-label="Open cart">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
-            <line x1="3" y1="6" x2="21" y2="6"/>
-            <path d="M16 10a4 4 0 01-8 0"/>
-          </svg>
-          <span id="cartBadge" class="cart-badge" hidden>0</span>
-          Cart
-        </button>
+        <a href="#contact" class="nav-cart-btn">Order Now</a>
       </nav>
     </div>
   </header>
@@ -76,7 +68,7 @@
         <h1 class="hero-title reveal">New Drop.<br>New Harvest.<br>New Heat.</h1>
         <p class="hero-sub reveal">Limited preorder spots open now. Small-batch, lab-tested, handpicked. Secure yours before this run sells out.</p>
         <div class="hero-cta reveal">
-          <a href="https://example.com/store" target="_blank" rel="noopener" class="btn-blue btn-lg">Shop / Order</a>
+          <a href="#contact" class="btn-blue btn-lg">Shop / Order</a>
           <a href="#drop" class="btn-ghost btn-lg">Explore the Drop</a>
         </div>
       </div>
@@ -88,10 +80,6 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="hero-scroll-hint">
-      <span>Scroll</span>
-      <div class="scroll-line"></div>
     </div>
   </section>
 
@@ -268,29 +256,26 @@
         <h2 class="sec-title" style="text-align:left">Contact Us</h2>
         <p>Questions about a drop, a strain, or a collaboration? Fill out the form or reach us directly.</p>
         <div class="contact-links">
-          <div class="c-link"><span>Instagram</span><a href="https://instagram.com" target="_blank" rel="noopener">@wakagrown</a></div>
-          <div class="c-link"><span>Email</span><a href="mailto:info@wakagrown.com">info@wakagrown.com</a></div>
+          <div class="c-link"><span>Instagram</span><a href="https://www.instagram.com/wakagrown" target="_blank" rel="noopener">@wakagrown</a></div>
+          <div class="c-link"><span>Telegram</span><a href="https://t.me/wakagrown420" target="_blank" rel="noopener">@wakagrown420</a></div>
         </div>
       </div>
-      <form id="contactForm" class="contact-form reveal" novalidate>
-        <div class="field">
-          <label for="cfName">Name</label>
-          <input id="cfName" type="text" placeholder="Your name" required />
-          <span class="ferr"></span>
+      <div class="contact-form reveal tg-cta-box">
+        <div class="tg-icon-wrap">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L7.19 13.67l-2.96-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.958.889z"/>
+          </svg>
         </div>
-        <div class="field">
-          <label for="cfEmail">Email</label>
-          <input id="cfEmail" type="email" placeholder="your@email.com" required />
-          <span class="ferr"></span>
-        </div>
-        <div class="field">
-          <label for="cfMsg">Message</label>
-          <textarea id="cfMsg" rows="5" placeholder="What's on your mind?" required></textarea>
-          <span class="ferr"></span>
-        </div>
-        <button type="submit" class="btn-blue btn-lg">Send Message</button>
-        <p id="formStatus" style="color:var(--blue-light);font-size:.85rem;margin-top:.5rem;min-height:1.2rem"></p>
-      </form>
+        <h3 class="tg-cta-title">Ready to Order?</h3>
+        <p class="tg-cta-sub">Message us directly on Telegram. We respond fast — tell us what strain and size you want and we'll take it from there.</p>
+        <a href="https://t.me/wakagrown420" target="_blank" rel="noopener" class="btn-blue btn-lg tg-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L7.19 13.67l-2.96-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.958.889z"/>
+          </svg>
+          Message @wakagrown420
+        </a>
+        <p class="tg-note">Tap the button — Telegram opens instantly</p>
+      </div>
     </div>
   </section>
 
@@ -304,7 +289,7 @@
           <a href="#gallery">Gallery</a><a href="#story">Story</a>
           <a href="#faq">FAQ</a><a href="#contact">Contact</a>
         </nav>
-        <a href="https://example.com/store" target="_blank" rel="noopener" class="btn-blue">Shop / Order →</a>
+        <a href="#contact" class="btn-blue">Order Now →</a>
       </div>
       <p class="footer-legal">For informational purposes only. No sales are conducted on this website. Must be 21+ to view.</p>
       <div class="footer-bot">
@@ -315,66 +300,6 @@
   </footer>
 
 
-  <!-- CART OVERLAY + DRAWER -->
-  <div id="cartOverlay" class="cart-overlay" aria-hidden="true"></div>
-  <aside id="cartDrawer" class="cart-drawer" hidden aria-label="Shopping cart">
-    <div class="cart-drawer__head">
-      <div>
-        <h2 class="cart-drawer__title">Your Cart</h2>
-        <p id="cartCount" class="cart-drawer__count">0 items</p>
-      </div>
-      <button id="cartClose" class="cart-close" aria-label="Close cart">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
-          <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
-        </svg>
-      </button>
-    </div>
-    <div id="cartItems" class="cart-items"></div>
-    <div class="cart-drawer__foot" id="cartFoot" style="display:none">
-      <div class="cart-subtotal">
-        <span>Subtotal</span>
-        <strong id="cartTotal">$0.00</strong>
-      </div>
-      <p class="cart-unit-note">Prices per eighth (3.5g). Lab-tested, small-batch.</p>
-      <button id="cartCheckout" class="btn-blue btn-lg" style="width:100%">Place Order →</button>
-      <button id="cartClear" class="cart-clear-btn">Clear cart</button>
-    </div>
-  </aside>
-
-  <!-- ORDER MODAL -->
-  <div id="orderModal" class="modal" style="display:none" role="dialog" aria-modal="true" aria-labelledby="orderModalTitle">
-    <div class="modal-bd" id="orderModalBd"></div>
-    <div class="modal-box" style="max-width:480px">
-      <button class="modal-close" id="orderModalClose" aria-label="Close">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
-          <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
-        </svg>
-      </button>
-      <div class="modal-body">
-        <h2 id="orderModalTitle" style="font-family:var(--display);font-size:1.3rem;font-weight:700;letter-spacing:.04em;margin-bottom:.3rem">Place Your Order</h2>
-        <p style="color:var(--muted);font-size:.85rem;margin-bottom:1.5rem">Fill in your details and we'll follow up to confirm and arrange payment.</p>
-        <div id="orderSummary"></div>
-        <form id="orderForm" novalidate>
-          <div class="field" style="margin-bottom:1rem">
-            <label for="ofName">Name</label>
-            <input id="ofName" type="text" placeholder="Your name" required />
-            <span class="ferr"></span>
-          </div>
-          <div class="field" style="margin-bottom:1rem">
-            <label for="ofEmail">Email</label>
-            <input id="ofEmail" type="email" placeholder="your@email.com" required />
-            <span class="ferr"></span>
-          </div>
-          <div class="field" style="margin-bottom:1.25rem">
-            <label for="ofNotes">Notes (optional)</label>
-            <textarea id="ofNotes" rows="3" placeholder="Any preferences or questions…"></textarea>
-          </div>
-          <button type="submit" class="btn-blue btn-lg" style="width:100%">Send Order</button>
-          <p id="orderStatus" style="color:var(--blue-light);font-size:.82rem;margin-top:.5rem;min-height:1rem"></p>
-        </form>
-      </div>
-    </div>
-  </div>
 
 </div><!-- /#site -->
 
@@ -410,7 +335,7 @@
           <span class="modal-price-label" id="modalPriceLabel">7 grams</span>
           <strong id="modalPrice" class="modal-price-val"></strong>
         </div>
-        <button id="modalAtcBtn" class="btn-blue btn-lg" style="width:100%;margin-top:.75rem">Add to Cart</button>
+        <button id="modalOrderBtn" class="btn-blue btn-lg" style="width:100%;margin-top:.75rem">Contact to Order →</button>
       </div>
     </div>
   </div>
@@ -437,6 +362,6 @@
   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
 </button>
 
-<script src="script.js"></script>
+<script src="script.js?v=3"></script>
 </body>
 </html>
