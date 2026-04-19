@@ -276,14 +276,18 @@ ul { list-style: none; }
   display: none;
   flex-direction: column;
   gap: 5px;
-  width: 36px;
-  padding: 6px;
+  width: 44px;
+  height: 44px;
+  padding: 10px;
   flex-shrink: 0;
+  position: relative;
   z-index: 10;
+  justify-content: center;
 }
 .nav-toggle span {
   display: block;
-  height: 2px;
+  width: 100%;
+  height: 2.5px;
   background: #ffffff;
   border-radius: 2px;
   transition: transform var(--dur) var(--ease), opacity var(--dur) var(--ease);
