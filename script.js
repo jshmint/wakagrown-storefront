@@ -526,29 +526,27 @@ function openStrainModal(s) {
 ═══════════════════════════════════════════════════════════ */
 function initGallery() {
   const grid = $('#galleryGrid');
-  // Heights and color variants for each placeholder tile.
-  // Replace an entry's `src` with an actual image path once photos are ready.
   const items = [
-    { h: 260, variant: ''    }, { h: 320, variant: '--b' },
-    { h: 280, variant: '--c' }, { h: 360, variant: ''    },
-    { h: 240, variant: '--b' }, { h: 300, variant: '--c' },
-    { h: 380, variant: ''    }, { h: 260, variant: '--b' },
-    { h: 290, variant: '--c' }, { h: 340, variant: ''    },
-    { h: 250, variant: '--b' }, { h: 310, variant: '--c' },
+    { src: 'assets/img/bananajealousy.jpg',              name: 'Banana Jealousy'         },
+    { src: 'assets/img/bananajealousy.mp4',              name: 'Banana Jealousy'         },
+    { src: 'assets/img/FunYuns.jpg',                     name: 'Fun Yuns'                },
+    { src: 'assets/img/japenesejam.mp4',                 name: 'Japanese Jam'            },
+    { src: 'assets/img/slowmagic.mp4',                   name: 'Slow Magic'              },
+    { src: 'assets/img/whiteash.mp4',                    name: ''                        },
   ];
 
   items.forEach((item, i) => {
+    const isVideo = /\.(mp4|webm|mov|ogg)$/i.test(item.src);
+    const mediaInner = isVideo
+      ? `<video src="${item.src}" autoplay muted loop playsinline></video>`
+      : `<img src="${item.src}" alt="${item.name}" loading="lazy">`;
+
     const div = document.createElement('div');
     div.className = 'gal-item';
-    div.innerHTML = `
-      <div class="gal-ph gal-ph${item.variant}" style="height:${item.h}px" aria-label="WakaGrown gallery photo ${i + 1}">
-        <span class="gal-ph__mark">W</span>
-        <span class="gal-ph__label">Photo Coming Soon</span>
-      </div>
-      <div class="gal-overlay">
-        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
-      </div>`;
     div.setAttribute('tabindex', '0');
+    div.innerHTML = `
+      <div class="gal-media-wrap">${mediaInner}</div>
+      <div class="gal-name">${item.name}</div>`;
     div.addEventListener('click', () => openLightbox(items, i));
     div.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openLightbox(items, i); } });
     grid.appendChild(div);
@@ -567,12 +565,14 @@ function openLightbox(seeds, startIdx) {
 
   function show(idx) {
     const item = seeds[idx];
-    // If the item has a real src, show it; otherwise render the branded placeholder.
     if (item.src) {
-      lbImg.innerHTML = `<img src="${item.src}" alt="WakaGrown gallery ${idx + 1}" />`;
+      const isVideo = /\.(mp4|webm|mov|ogg)$/i.test(item.src);
+      lbImg.innerHTML = isVideo
+        ? `<video src="${item.src}" autoplay muted loop playsinline class="lb-media-video"></video>`
+        : `<img src="${item.src}" alt="${item.name || 'WakaGrown gallery'}" class="lb-media-img" />`;
     } else {
       lbImg.innerHTML = `
-        <div class="gal-ph gal-ph${item.variant}" style="height:clamp(260px,55vh,560px);width:clamp(300px,70vw,700px)">
+        <div class="gal-ph" style="height:clamp(260px,55vh,560px);width:clamp(300px,70vw,700px)">
           <span class="gal-ph__mark">W</span>
           <span class="gal-ph__label">Photo Coming Soon</span>
         </div>`;
